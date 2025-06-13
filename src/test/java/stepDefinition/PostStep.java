@@ -4,7 +4,8 @@ import static io.restassured.RestAssured.*;
 import java.io.File;
 import java.util.Map;
 import org.testng.Assert;
-
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.hamcrest.MatcherAssert.assertThat;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;
@@ -73,8 +74,18 @@ public class PostStep {
 		respStatusCode = response.getStatusCode();
 		if (respStatusCode == 201) {
 			Context.userId = response.jsonPath().getString("userId");
+		}		
+	}
+	
+	@Then("user should receive correct schema")
+	public void user_should_receive_correct_schema() {
+		Response response = context.getResponse();
+		respStatusCode = response.getStatusCode();
+		if (respStatusCode == 201) {
+			Context.userId = response.jsonPath().getString("userId");
 		}
-		
+		assertThat(response.asString(),
+			    matchesJsonSchemaInClasspath("schema/PostResponseSchema.json"));	
 	}
 	
 	@Then("user should receive correct status line")
