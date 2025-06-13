@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>36/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 13 02:24:14 CDT 2025</td>
+<td>Started on:</td><td>Fri Jun 13 02:46:44 CDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34354 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34540 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,8 +76,8 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error when updating user with Put request with invalid data", "Update existing user with Put request"</td>
-<td><div><pre>java.lang.AssertionError: expected [409] but found [500]
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error when updating user with Patch request with invalid data", "Update existing user with Patch request"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -86,9 +86,9 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1395)
 	at org.testng.Assert.assertEquals(Assert.java:1441)
 	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
-	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1270236380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1270236380'><pre>java.lang.AssertionError: expected [409] but found [500]
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace510956085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510956085'><pre>java.lang.AssertionError: expected [409] but found [400]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -97,10 +97,10 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1395)
 	at org.testng.Assert.assertEquals(Assert.java:1441)
 	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
-	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
 </pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error when updating user with Patch request with invalid data", "Update existing user with Patch request"</td>
 <td><div><pre>java.lang.AssertionError: expected [409] but found [500]
@@ -113,8 +113,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1441)
 	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
 	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace488499985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace488499985'><pre>java.lang.AssertionError: expected [409] but found [500]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2029215289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2029215289'><pre>java.lang.AssertionError: expected [409] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -125,8 +125,34 @@ function toggleAllBoxes() {
 	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
 	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
 </pre></div></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error when updating user with Put request with invalid data", "Update existing user with Put request"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace634320051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace634320051'><pre>java.lang.AssertionError: expected [409] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
+</pre></div></td>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error when updating user with Put request with invalid data", "Update existing user with Put request"</td>
 <td><div><pre>java.lang.AssertionError: expected [409] but found [400]
@@ -139,8 +165,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1441)
 	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
 	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace170698369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace170698369'><pre>java.lang.AssertionError: expected [409] but found [400]
+</pre></div><a href='#' onClick='toggleBox("stack-trace87487369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace87487369'><pre>java.lang.AssertionError: expected [409] but found [400]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -151,34 +177,8 @@ function toggleAllBoxes() {
 	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
 	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
 </pre></div></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error when updating user with Patch request with invalid data", "Update existing user with Patch request"</td>
-<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
-	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
-</pre></div><a href='#' onClick='toggleBox("stack-trace53672476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace53672476'><pre>java.lang.AssertionError: expected [409] but found [400]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
-	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
-</pre></div></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -189,185 +189,185 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with nonexistent user id should have correct response message", "Delete existing user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with nonexistent user name should have correct status code", "Delete existing user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  response status code to GET all users", "Get User details"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate status line displays error message for GET user with invalid user id", "Get User details"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate response body is in the format Content- Type JSON for GET all users", "Get User details"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is successfully able to update user information and validate field", "Update existing user with Put request"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with valid user name should have correct status code", "Delete existing user"</td>
-<td></td>
-<td>6</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with nonexistent user id should have correct status code", "Delete existing user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with valid user name should have correct response message", "Delete existing user"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate GET request for user with valid user id", "Get User details"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is successfully able to update user information with patch and validate field", "Update existing user with Patch request"</td>
 <td></td>
 <td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that new user created successfully with valid status code", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate GET request for user with valid user first name", "Get User details"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct status line is displayed for GET all users", "Get User details"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is successfully able to update user information with patch and receive correct status code", "Update existing user with Patch request"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate status line displays error message for GET user with invalid user first name", "Get User details"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with valid user name should have correct status code", "Delete existing user"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate status line displays error message for GET user with invalid user id", "Get User details"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate status code for GET user with invalid user first name", "Get User details"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that new user created successfully with valid content type", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with valid user id should have correct response message", "Delete existing user"</td>
 <td></td>
 <td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with valid user id should have correct status code", "Delete existing user"</td>
-<td></td>
-<td>1</td>
-<td>runner.TestRunner@231f98ef</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is successfully able to update user information and receive correct status code", "Update existing user with Put request"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that new user created successfully with valid status line", "Create a new user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate GET request for user with valid user id", "Get User details"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with valid user id should have correct status code", "Delete existing user"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that new user created successfully with valid status code", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate  response status code to GET all users", "Get User details"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate status code for GET user with invalid user id", "Get User details"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with nonexistent user id should have correct response message", "Delete existing user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate response body is in the format Content- Type JSON for GET all users", "Get User details"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is successfully able to update user information and receive correct status code", "Update existing user with Put request"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that new user created successfully with valid content type", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with nonexistent user id should have correct status code", "Delete existing user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate GET request for user with valid user first name", "Get User details"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate status code for GET user with invalid user first name", "Get User details"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is successfully able to update user information with patch and receive correct status code", "Update existing user with Patch request"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with valid user name should have correct response message", "Delete existing user"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is successfully able to update user information and validate field", "Update existing user with Put request"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate correct status line is displayed for GET all users", "Get User details"</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with nonexistent user name should have correct response message", "Delete existing user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete user with nonexistent user name should have correct status code", "Delete existing user"</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct status code when creating user with invalid data", "Create a new user"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user gets error with correct error message when creating user with invalid data", "Create a new user"</td>
 <td></td>
 <td>0</td>
-<td>runner.TestRunner@231f98ef</td></tr>
+<td>runner.TestRunner@2b40ff9c</td></tr>
 </table><p>
 </body>
 </html>

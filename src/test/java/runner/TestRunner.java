@@ -7,8 +7,8 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-		plugin = {"pretty", "html:target/userAPI.html","json:target/userAPI.json"
-				//"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" , 
+		plugin = {"pretty", "html:target/userAPI.html","json:target/userAPI.json",
+				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"  
 				//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				//"com.aventstack.chaintest.plugins.ChainTestCucumberListener:"
 				}, //reporting purpose
