@@ -27,6 +27,15 @@ Scenario Outline: Verify that new user created successfully with valid status li
     |Scenario|
     |validUser1|
     
+Scenario Outline: Verify that new user created successfully with valid schema
+    Given user sets a post request with valid endpoint from "<Scenario>" and "User.json"
+    When user send post request with valid first name,last name,contact number,email id,user address
+    Then user should receive correct schema
+    
+    Examples:
+    |Scenario|
+    |validUser1|
+    
 Scenario Outline: Verify user gets error with correct status code when creating user with invalid data
     Given user sets a post request with valid endpoint from "<Scenario>" and "User.json"
     When user send a post request with invalid data
