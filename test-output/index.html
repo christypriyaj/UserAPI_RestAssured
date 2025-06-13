@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\jimre\AppData\Local\Temp\testng-eclipse-1408520264\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">40 methods, 4 failed,   36 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error when updating user with Put request with invalid data&quot;, &quot;Update existing use...)">runScenario("Verify user gets error when updating user with Put request with invalid data", "Update existing use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error when updating user with Patch request with invalid data&quot;, &quot;Update existing u...)">runScenario("Verify user gets error when updating user with Patch request with invalid data", "Update existing u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error when updating user with Put request with invalid data&quot;, &quot;Update existing use...)">runScenario("Verify user gets error when updating user with Put request with invalid data", "Update existing use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error when updating user with Patch request with invalid data&quot;, &quot;Update existing u...)">runScenario("Verify user gets error when updating user with Patch request with invalid data", "Update existing u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with nonexistent user id should have correct response message&quot;, &quot;Delete existi...)">runScenario("Validate Delete user with nonexistent user id should have correct response message", "Delete existi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with nonexistent user name should have correct status code&quot;, &quot;Delete existing ...)">runScenario("Validate Delete user with nonexistent user name should have correct status code", "Delete existing ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate  response status code to GET all users&quot;, &quot;Get User details&quot;)">runScenario("Validate  response status code to GET all users", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate status line displays error message for GET user with invalid user id&quot;, &quot;Get User details&quot;)">runScenario("Validate status line displays error message for GET user with invalid user id", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate response body is in the format Content- Type JSON for GET all users&quot;, &quot;Get User details&quot;)">runScenario("Validate response body is in the format Content- Type JSON for GET all users", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user is successfully able to update user information and validate field&quot;, &quot;Update existing u...)">runScenario("Verify user is successfully able to update user information and validate field", "Update existing u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with valid user name should have correct status code&quot;, &quot;Delete existing user&quot;)">runScenario("Validate Delete user with valid user name should have correct status code", "Delete existing user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with nonexistent user id should have correct status code&quot;, &quot;Delete existing us...)">runScenario("Validate Delete user with nonexistent user id should have correct status code", "Delete existing us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with valid user name should have correct response message&quot;, &quot;Delete existing u...)">runScenario("Validate Delete user with valid user name should have correct response message", "Delete existing u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate GET request for user with valid user id&quot;, &quot;Get User details&quot;)">runScenario("Validate GET request for user with valid user id", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user is successfully able to update user information with patch and validate field&quot;, &quot;Update...)">runScenario("Verify user is successfully able to update user information with patch and validate field", "Update...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that new user created successfully with valid status code&quot;, &quot;Create a new user&quot;)">runScenario("Verify that new user created successfully with valid status code", "Create a new user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate GET request for user with valid user first name&quot;, &quot;Get User details&quot;)">runScenario("Validate GET request for user with valid user first name", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate correct status line is displayed for GET all users&quot;, &quot;Get User details&quot;)">runScenario("Validate correct status line is displayed for GET all users", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user is successfully able to update user information with patch and receive correct status c...)">runScenario("Verify user is successfully able to update user information with patch and receive correct status c...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate status line displays error message for GET user with invalid user first name&quot;, &quot;Get User d...)">runScenario("Validate status line displays error message for GET user with invalid user first name", "Get User d...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate status code for GET user with invalid user first name&quot;, &quot;Get User details&quot;)">runScenario("Validate status code for GET user with invalid user first name", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that new user created successfully with valid content type&quot;, &quot;Create a new user&quot;)">runScenario("Verify that new user created successfully with valid content type", "Create a new user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with valid user id should have correct response message&quot;, &quot;Delete existing use...)">runScenario("Validate Delete user with valid user id should have correct response message", "Delete existing use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with valid user id should have correct status code&quot;, &quot;Delete existing user&quot;)">runScenario("Validate Delete user with valid user id should have correct status code", "Delete existing user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user is successfully able to update user information and receive correct status code&quot;, &quot;Upda...)">runScenario("Verify user is successfully able to update user information and receive correct status code", "Upda...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify that new user created successfully with valid status line&quot;, &quot;Create a new user&quot;)">runScenario("Verify that new user created successfully with valid status line", "Create a new user")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate status code for GET user with invalid user id&quot;, &quot;Get User details&quot;)">runScenario("Validate status code for GET user with invalid user id", "Get User details")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Delete user with nonexistent user name should have correct response message&quot;, &quot;Delete exis...)">runScenario("Validate Delete user with nonexistent user name should have correct response message", "Delete exis...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error when updating user with Put request with invalid data&quot;, &quot;Update existing use...)">
+                  </a> <!-- runScenario("Verify user gets error when updating user with Put request with invalid data", "Update existing use...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error when updating user with Put request with invalid data","Update existing user with Put request")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [409] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error when updating user with Patch request with invalid data&quot;, &quot;Update existing u...)">
+                  </a> <!-- runScenario("Verify user gets error when updating user with Patch request with invalid data", "Update existing u...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error when updating user with Patch request with invalid data","Update existing user with Patch request")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [409] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error when updating user with Put request with invalid data&quot;, &quot;Update existing use...)">
+                  </a> <!-- runScenario("Verify user gets error when updating user with Put request with invalid data", "Update existing use...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error when updating user with Put request with invalid data","Update existing user with Put request")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Put.feature:24)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error when updating user with Patch request with invalid data&quot;, &quot;Update existing u...)">
+                  </a> <!-- runScenario("Verify user gets error when updating user with Patch request with invalid data", "Update existing u...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error when updating user with Patch request with invalid data","Update existing user with Patch request")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinition.GetStep.user_should_receive_correct_status_code(GetStep.java:99)
+	at ✽.user should receive correct status code(file:///C:/Users/jimre/eclipse-workspace/UserAPICucumberBDD_Christy/src/test/resources/features/Patch.feature:24)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">
+                  </a> <!-- runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct error message when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with nonexistent user id should have correct response message&quot;, &quot;Delete existi...)">
+                  </a> <!-- runScenario("Validate Delete user with nonexistent user id should have correct response message", "Delete existi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with nonexistent user id should have correct response message","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with nonexistent user name should have correct status code&quot;, &quot;Delete existing ...)">
+                  </a> <!-- runScenario("Validate Delete user with nonexistent user name should have correct status code", "Delete existing ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with nonexistent user name should have correct status code","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">
+                  </a> <!-- runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct error message when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate  response status code to GET all users&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate  response status code to GET all users", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate  response status code to GET all users","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate status line displays error message for GET user with invalid user id&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate status line displays error message for GET user with invalid user id", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate status line displays error message for GET user with invalid user id","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">
+                  </a> <!-- runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct status code when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate response body is in the format Content- Type JSON for GET all users&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate response body is in the format Content- Type JSON for GET all users", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate response body is in the format Content- Type JSON for GET all users","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user is successfully able to update user information and validate field&quot;, &quot;Update existing u...)">
+                  </a> <!-- runScenario("Verify user is successfully able to update user information and validate field", "Update existing u...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user is successfully able to update user information and validate field","Update existing user with Put request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with valid user name should have correct status code&quot;, &quot;Delete existing user&quot;)">
+                  </a> <!-- runScenario("Validate Delete user with valid user name should have correct status code", "Delete existing user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with valid user name should have correct status code","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with nonexistent user id should have correct status code&quot;, &quot;Delete existing us...)">
+                  </a> <!-- runScenario("Validate Delete user with nonexistent user id should have correct status code", "Delete existing us...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with nonexistent user id should have correct status code","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">
+                  </a> <!-- runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct status code when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">
+                  </a> <!-- runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct error message when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with valid user name should have correct response message&quot;, &quot;Delete existing u...)">
+                  </a> <!-- runScenario("Validate Delete user with valid user name should have correct response message", "Delete existing u...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with valid user name should have correct response message","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate GET request for user with valid user id&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate GET request for user with valid user id", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate GET request for user with valid user id","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user is successfully able to update user information with patch and validate field&quot;, &quot;Update...)">
+                  </a> <!-- runScenario("Verify user is successfully able to update user information with patch and validate field", "Update...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user is successfully able to update user information with patch and validate field","Update existing user with Patch request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that new user created successfully with valid status code&quot;, &quot;Create a new user&quot;)">
+                  </a> <!-- runScenario("Verify that new user created successfully with valid status code", "Create a new user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that new user created successfully with valid status code","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">
+                  </a> <!-- runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct error message when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate GET request for user with valid user first name&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate GET request for user with valid user first name", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate GET request for user with valid user first name","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate correct status line is displayed for GET all users&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate correct status line is displayed for GET all users", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate correct status line is displayed for GET all users","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user is successfully able to update user information with patch and receive correct status c...)">
+                  </a> <!-- runScenario("Verify user is successfully able to update user information with patch and receive correct status c...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user is successfully able to update user information with patch and receive correct status code","Update existing user with Patch request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">
+                  </a> <!-- runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct status code when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate status line displays error message for GET user with invalid user first name&quot;, &quot;Get User d...)">
+                  </a> <!-- runScenario("Validate status line displays error message for GET user with invalid user first name", "Get User d...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate status line displays error message for GET user with invalid user first name","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">
+                  </a> <!-- runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct status code when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate status code for GET user with invalid user first name&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate status code for GET user with invalid user first name", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate status code for GET user with invalid user first name","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that new user created successfully with valid content type&quot;, &quot;Create a new user&quot;)">
+                  </a> <!-- runScenario("Verify that new user created successfully with valid content type", "Create a new user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that new user created successfully with valid content type","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">
+                  </a> <!-- runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct error message when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct error message when creating user with invalid data&quot;, &quot;Create a ...)">
+                  </a> <!-- runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct error message when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with valid user id should have correct response message&quot;, &quot;Delete existing use...)">
+                  </a> <!-- runScenario("Validate Delete user with valid user id should have correct response message", "Delete existing use...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with valid user id should have correct response message","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with valid user id should have correct status code&quot;, &quot;Delete existing user&quot;)">
+                  </a> <!-- runScenario("Validate Delete user with valid user id should have correct status code", "Delete existing user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with valid user id should have correct status code","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user is successfully able to update user information and receive correct status code&quot;, &quot;Upda...)">
+                  </a> <!-- runScenario("Verify user is successfully able to update user information and receive correct status code", "Upda...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user is successfully able to update user information and receive correct status code","Update existing user with Put request")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify that new user created successfully with valid status line&quot;, &quot;Create a new user&quot;)">
+                  </a> <!-- runScenario("Verify that new user created successfully with valid status line", "Create a new user") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify that new user created successfully with valid status line","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate status code for GET user with invalid user id&quot;, &quot;Get User details&quot;)">
+                  </a> <!-- runScenario("Validate status code for GET user with invalid user id", "Get User details") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate status code for GET user with invalid user id","Get User details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Delete user with nonexistent user name should have correct response message&quot;, &quot;Delete exis...)">
+                  </a> <!-- runScenario("Validate Delete user with nonexistent user name should have correct response message", "Delete exis...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Delete user with nonexistent user name should have correct response message","Delete existing user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">
+                  </a> <!-- runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct status code when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user gets error with correct status code when creating user with invalid data&quot;, &quot;Create a ne...)">
+                  </a> <!-- runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user gets error with correct status code when creating user with invalid data","Create a new user")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\jimre\AppData\Local\Temp\testng-eclipse-1408520264\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(40);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runner.TestRunner')
+data.setCell(0, 3, 6925);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runner.TestRunner')
+data.setCell(1, 3, 1359);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runner.TestRunner')
+data.setCell(2, 3, 1292);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runner.TestRunner')
+data.setCell(3, 3, 1260);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runner.TestRunner')
+data.setCell(4, 3, 1195);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runner.TestRunner')
+data.setCell(5, 3, 1111);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runner.TestRunner')
+data.setCell(6, 3, 1106);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.TestRunner')
+data.setCell(7, 3, 1064);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runner.TestRunner')
+data.setCell(8, 3, 1060);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.TestRunner')
+data.setCell(9, 3, 1049);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.TestRunner')
+data.setCell(10, 3, 1024);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.TestRunner')
+data.setCell(11, 3, 1016);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.TestRunner')
+data.setCell(12, 3, 993);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.TestRunner')
+data.setCell(13, 3, 952);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.TestRunner')
+data.setCell(14, 3, 948);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.TestRunner')
+data.setCell(15, 3, 708);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runner.TestRunner')
+data.setCell(16, 3, 651);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runner.TestRunner')
+data.setCell(17, 3, 641);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runner.TestRunner')
+data.setCell(18, 3, 422);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runner.TestRunner')
+data.setCell(19, 3, 417);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runner.TestRunner')
+data.setCell(20, 3, 384);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runner.TestRunner')
+data.setCell(21, 3, 381);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'runner.TestRunner')
+data.setCell(22, 3, 378);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'runner.TestRunner')
+data.setCell(23, 3, 370);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'runner.TestRunner')
+data.setCell(24, 3, 364);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'runner.TestRunner')
+data.setCell(25, 3, 364);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'runner.TestRunner')
+data.setCell(26, 3, 356);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'runner.TestRunner')
+data.setCell(27, 3, 355);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'runner.TestRunner')
+data.setCell(28, 3, 354);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'runner.TestRunner')
+data.setCell(29, 3, 352);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'runner.TestRunner')
+data.setCell(30, 3, 347);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'runner.TestRunner')
+data.setCell(31, 3, 346);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'runner.TestRunner')
+data.setCell(32, 3, 346);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'runner.TestRunner')
+data.setCell(33, 3, 345);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'runner.TestRunner')
+data.setCell(34, 3, 344);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'runner.TestRunner')
+data.setCell(35, 3, 344);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'runner.TestRunner')
+data.setCell(36, 3, 343);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'runner.TestRunner')
+data.setCell(37, 3, 340);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'runner.TestRunner')
+data.setCell(38, 3, 339);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'runner.TestRunner')
+data.setCell(39, 3, 316);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@27a23d87)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with valid user name should have correct status code", "Delete existing user")</span>
+                <span class="method-start">1794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with valid user name should have correct response message", "Delete existing u...)</span>
+                <span class="method-start">8727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with nonexistent user name should have correct status code", "Delete existing ...)</span>
+                <span class="method-start">9795 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with nonexistent user name should have correct response message", "Delete exis...)</span>
+                <span class="method-start">10170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with valid user id should have correct status code", "Delete existing user")</span>
+                <span class="method-start">10597 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with valid user id should have correct response message", "Delete existing use...)</span>
+                <span class="method-start">11706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with nonexistent user id should have correct status code", "Delete existing us...)</span>
+                <span class="method-start">12819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Delete user with nonexistent user id should have correct response message", "Delete existi...)</span>
+                <span class="method-start">13169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate  response status code to GET all users", "Get User details")</span>
+                <span class="method-start">13556 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate correct status line is displayed for GET all users", "Get User details")</span>
+                <span class="method-start">14920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate response body is in the format Content- Type JSON for GET all users", "Get User details")</span>
+                <span class="method-start">16184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate GET request for user with valid user id", "Get User details")</span>
+                <span class="method-start">17382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate status code for GET user with invalid user id", "Get User details")</span>
+                <span class="method-start">17729 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate status line displays error message for GET user with invalid user id", "Get User details")</span>
+                <span class="method-start">18071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate GET request for user with valid user first name", "Get User details")</span>
+                <span class="method-start">18491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate status code for GET user with invalid user first name", "Get User details")</span>
+                <span class="method-start">18838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate status line displays error message for GET user with invalid user first name", "Get User d...)</span>
+                <span class="method-start">19157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user is successfully able to update user information with patch and receive correct status c...)</span>
+                <span class="method-start">19537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user is successfully able to update user information with patch and validate field", "Update...)</span>
+                <span class="method-start">20588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify user gets error when updating user with Patch request with invalid data", "Update existing u...)</span>
+                <span class="method-start">21649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify user gets error when updating user with Patch request with invalid data", "Update existing u...)</span>
+                <span class="method-start">22675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that new user created successfully with valid status code", "Create a new user")</span>
+                <span class="method-start">23625 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that new user created successfully with valid content type", "Create a new user")</span>
+                <span class="method-start">24277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify that new user created successfully with valid status line", "Create a new user")</span>
+                <span class="method-start">24920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</span>
+                <span class="method-start">25630 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</span>
+                <span class="method-start">25976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</span>
+                <span class="method-start">26325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</span>
+                <span class="method-start">26674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</span>
+                <span class="method-start">27023 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct status code when creating user with invalid data", "Create a ne...)</span>
+                <span class="method-start">27381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</span>
+                <span class="method-start">27723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</span>
+                <span class="method-start">28090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</span>
+                <span class="method-start">28456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</span>
+                <span class="method-start">28840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</span>
+                <span class="method-start">29195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user gets error with correct error message when creating user with invalid data", "Create a ...)</span>
+                <span class="method-start">29552 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user is successfully able to update user information and receive correct status code", "Upda...)</span>
+                <span class="method-start">29910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user is successfully able to update user information and validate field", "Update existing u...)</span>
+                <span class="method-start">30905 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify user gets error when updating user with Put request with invalid data", "Update existing use...)</span>
+                <span class="method-start">32201 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify user gets error when updating user with Put request with invalid data", "Update existing use...)</span>
+                <span class="method-start">33219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">34176 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

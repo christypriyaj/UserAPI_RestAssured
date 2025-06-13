@@ -1,0 +1,341 @@
+{
+	"validUser1": {
+		"request" : {
+		  "userFirstName": "TestTestChris",
+		  "userLastName": "Name",
+		  "userContactNumber": 8710212304,
+		  "userEmailId": "Test081Chris@gmail.com",
+		  "userAddress": {
+		    "plotNumber": "pl-12",
+		    "street": "maple lane",
+		    "state": "SC",
+		    "country": "US",
+		    "zipCode": 12345
+		  }
+		  },
+		"expected": {
+			"statusCode": 201,
+		  	"statusMsg" : "HTTP/1.1 201 Created"
+		  		   }
+	},	
+	"nonAlphaFirstName": {
+		"request": {
+			"userFirstName": "Test08_Chris",
+			"userLastName": "Name",
+			"userContactNumber": 8710212333,
+			"userEmailId": "Test08Christy@ymail.com",
+			"userAddress": {
+				"plotNumber": "pl-12",
+				"street": "maple lane",
+				"state": "SC",
+				"country": "US",
+				"zipCode": 12345
+			}
+		},
+		"expected": {
+		    "statusCode": 400,
+			"statusMsg" : "HTTP/1.1 400 Bad Request",
+			"responseStatus" : "400 BAD_REQUEST",
+			"responseErrorMessage": "user FirstName is mandatory and should contains alphabets only"
+		}
+	},
+	
+	"nonAlphaLastName": {
+		"request": {
+			"userFirstName": "TestChris",
+			"userLastName": "Name_01Test",
+			"userContactNumber": 8710212333,
+			"userEmailId": "Test08Christy@ymail.com",
+			"userAddress": {
+				"plotNumber": "pl-12",
+				"street": "maple lane",
+				"state": "SC",
+				"country": "US",
+				"zipCode": 12345
+			}
+		},
+		"expected": {
+		    "statusCode": 400,
+			"statusMsg" : "HTTP/1.1 400 Bad Request",
+			"responseStatus" : "400 BAD_REQUEST",
+			"responseErrorMessage": "User Last Name is mandatory and should contains alphabets only"
+		}
+	},
+	
+	"duplicateContact": {
+		"request": {
+			"userFirstName": "TestChris",
+			"userLastName": "NameTest",
+			"userContactNumber": 1234567891,
+			"userEmailId": "Test08Christy@ymail.com",
+			"userAddress": {
+				"plotNumber": "pl-12",
+				"street": "maple lane",
+				"state": "SC",
+				"country": "US",
+				"zipCode": 12345
+			}
+		},
+		"expected": {
+		    "statusCode": 409,
+			"statusMsg" : "HTTP/1.1 409 Conflict",
+			"responseStatus" : "409 CONFLICT",
+			"responseErrorMessage": "User already exist with same contact number"
+		}
+	},
+	
+	"invalidLenContact": {
+		"request": {
+			"userFirstName": "TestTestChris",
+			"userLastName": "Name",
+			"userContactNumber": 12345,
+			"userEmailId": "Test08Christy@ymail.com",
+			"userAddress": {
+				"plotNumber": "pl-12",
+				"street": "maple lane",
+				"state": "SC",
+				"country": "US",
+				"zipCode": 12345
+			}
+		},
+		"expected": {
+		    "statusCode": 400,
+			"statusMsg" : "HTTP/1.1 400 Bad Request",
+			"responseStatus" : "400 BAD_REQUEST",
+			"responseErrorMessage": "Phone Number is required and should contains 10 numeric values only"
+		}
+	},
+	
+	"invalidEmail": {
+		"request": {
+			"userFirstName": "TestChris",
+			"userLastName": "NameTest",
+			"userContactNumber": 8710212333,
+			"userEmailId": "Test08Christy_ymail.com",
+			"userAddress": {
+				"plotNumber": "pl-12",
+				"street": "maple lane",
+				"state": "SC",
+				"country": "US",
+				"zipCode": 12345
+			}
+		},
+		"expected": {
+		    "statusCode": 400,
+			"statusMsg" : "HTTP/1.1 400 Bad Request",
+			"responseStatus" : "400 BAD_REQUEST",
+			"responseErrorMessage": "User email Id is required and should be in proper email format"
+		}
+	},	
+	
+	"duplicateEmail": {
+		"request": {
+			"userFirstName": "TestChris",
+			"userLastName": "NameTest",
+			"userContactNumber": 8710212333,
+			"userEmailId": "Numpy@gmail.com",
+			"userAddress": {
+				"plotNumber": "pl-12",
+				"street": "maple lane",
+				"state": "SC",
+				"country": "US",
+				"zipCode": 12345
+			}
+		},
+		"expected": {
+			"statusCode": 409,
+			"statusMsg" : "HTTP/1.1 409 Conflict",
+			"responseStatus" : "409 CONFLICT",
+			"responseErrorMessage": "User already exist with same email id"
+		}
+	},
+	
+	"getUserIDValid": {
+			"request": {
+				"userId": 1
+				},
+			"expected": {
+				"statusCode": 200,
+				"statusMsg" : "HTTP/1.1 200 OK"
+			}
+		},
+	
+	"getUserIDInvalid": {
+			"request": {
+				"userId": 12541630
+				},
+			"expected": {
+				"statusCode": 404,
+				"statusMsg" : "HTTP/1.1 404 Not Found",
+				"responseStatus" : "404 NOT_FOUND",
+				"responseErrorMessage": "User with userId 12541630 not found!"
+			}
+	},
+	
+	"getUserFirstNameValid": {
+			"request": {
+				"userFirstname": "Numpy"
+				},
+			"expected": {
+				"statusCode": 200,
+				"statusMsg" : "HTTP/1.1 200 OK"
+			}
+		},
+	
+	"getUserFirstnameInvalid": {
+			"request": {
+				"userFirstname": "NameNotExists"
+				},
+			"expected": {
+				"statusCode": 404,
+				"statusMsg" : "HTTP/1.1 404 Not Found",
+				"responseStatus" : "404 NOT_FOUND",
+				"responseErrorMessage": "User with userFirstName NameNotExists not found!"
+			}
+		},
+
+	"putValidLastName": {
+		"request" : {
+		  "userFirstName": "TestTestChris",
+		  "userLastName": "NamePutUpdate",
+		  "userContactNumber": 8710212304,
+		  "userEmailId": "Test081Chris@gmail.com",
+		  "userAddress": {
+		    "plotNumber": "pl-12",
+		    "street": "maple lane",
+		    "state": "SC",
+		    "country": "US",
+		    "zipCode": 12345
+		  }
+		  },
+		"expected": {
+			"statusCode": 200,
+		  	"statusMsg" : "HTTP/1.1 200 OK"
+		  		   }
+	},
+	
+	"putDuplicateContact": {
+		"request" : {
+		  "userFirstName": "TestTestChris",
+		  "userLastName": "NamePutUpdate",
+		  "userContactNumber": 1234567891,
+		  "userEmailId": "Test081Chris@gmail.com",
+		  "userAddress": {
+		    "plotNumber": "pl-12",
+		    "street": "maple lane",
+		    "state": "SC",
+		    "country": "US",
+		    "zipCode": 12345
+		  }
+		  },
+		"expected": {
+			"statusCode": 409,
+			"statusMsg" : "HTTP/1.1 409 Conflict",
+			"responseStatus" : "409 CONFLICT",
+			"responseErrorMessage": "User already exist with same contact number"
+		  		   }
+	},
+	
+	"putDuplicateEmail": {
+		"request" : {
+		  "userFirstName": "TestTestChris",
+		  "userLastName": "NamePutUpdate",
+		  "userContactNumber": 8710212304,
+		  "userEmailId": "Numpy@gmail.com",
+		  "userAddress": {
+		    "plotNumber": "pl-12",
+		    "street": "maple lane",
+		    "state": "SC",
+		    "country": "US",
+		    "zipCode": 12345
+		  }
+		  },
+		"expected": {
+			"statusCode": 409,
+			"statusMsg" : "HTTP/1.1 409 Conflict",
+			"responseStatus" : "409 CONFLICT",
+			"responseErrorMessage": "User already exist with same email id"
+		  		   }
+	},
+
+	"patchValidName": {
+		"request" : {
+		  "userFirstName": "TestPatchChris",
+		  "userLastName": "NamePatchUpdate"
+		  },
+		"expected": {
+			"statusCode": 200,
+		  	"statusMsg" : "HTTP/1.1 200 OK"
+		  		   }
+	},
+		
+	"patchDuplicateContact": {
+		"request" : {
+		  "userContactNumber": 1234567891
+		  },
+		"expected": {
+			"statusCode": 409,
+			"statusMsg" : "HTTP/1.1 409 Conflict",
+			"responseStatus" : "409 CONFLICT",
+			"responseErrorMessage": "User already exist with same contact number"
+		  		   }
+	},
+	
+	"patchDuplicateEmail": {
+	"request" : {
+	  "userEmailId": "Numpy@gmail.com"
+	  },
+	"expected": {
+		"statusCode": 409,
+		"statusMsg" : "HTTP/1.1 409 Conflict",
+		"responseStatus" : "409 CONFLICT",
+		"responseErrorMessage": "User already exist with same email id"
+	  		   }
+	},
+	
+	"deleteValidUser": {
+		"request" : {
+		  "userFirstName": "TestTestChris",
+		  "userLastName": "Name",
+		  "userContactNumber": 8785632104,
+		  "userEmailId": "Test081Chris@tmail.com",
+		  "userAddress": {
+		    "plotNumber": "pl-12",
+		    "street": "maple lane",
+		    "state": "SC",
+		    "country": "US",
+		    "zipCode": 12345
+		  }
+		  },
+		"expected": {
+			"statusCode": 200,
+		  	"statusMsg" : "HTTP/1.1 200 OK",
+			"responseStatus" : "Success",
+			"responseMessage": "User is deleted successfully"
+		  		   }
+	},
+	
+	"deleteInvalidUserName": {
+		"request" : {
+		  "userFirstName": "NameIsNotPresent"
+		  },
+		"expected": {
+			"statusCode": 404,
+		  	"statusMsg" : "HTTP/1.1 404 Not Found",
+			"responseStatus" : "404 NOT_FOUND",
+			"responseMessage": "User does not exist with name"
+		  		   }
+	},
+
+	"deleteInvalidUserId": {
+		"request" : {
+		  "userId": 965478213
+		  },
+		"expected": {
+			"statusCode": 404,
+		  	"statusMsg" : "HTTP/1.1 404 Not Found",
+			"responseStatus" : "404 NOT_FOUND",
+			"responseMessage": "User not found with id"
+		  		   }
+	}
+}
