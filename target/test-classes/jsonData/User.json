@@ -337,5 +337,24 @@
 			"responseStatus" : "404 NOT_FOUND",
 			"responseMessage": "User not found with id"
 		  		   }
+	},
+	"NoAuth": {
+		"request" : {
+		  "userFirstName": "TestTestChris",
+		  "userLastName": "Name",
+		  "userContactNumber": 8710212304,
+		  "userEmailId": "Test081Chris@gmail.com",
+		  "userAddress": {
+		    "plotNumber": "pl-12",
+		    "street": "maple lane",
+		    "state": "SC",
+		    "country": "US",
+		    "zipCode": 12345
+		  }
+		  },
+		"expected": {
+			"statusCode": 401,
+		  	"errorMsg" : "Unauthorized"
+		  		   }
 	}
 }

@@ -118,4 +118,27 @@ public class PostStep {
 		expRespMessage = (String) expectedData.get("responseErrorMessage");
 		Assert.assertEquals(expRespMessage, respMessage);
 	}
+	
+	@Given("User has No Auth and creates request from {string} and {string}")
+	public void user_has_no_auth_and_creates_request_from_and(String scenario, String jsonFile) {
+		
+		File file = new File("src/test/resources/jsonData/"+jsonFile); //Loads JSON file
+		ObjectMapper mapper = new ObjectMapper(); //Jackson class to convert JSON to Java Obj
+
+		Map<String, Map<String, Object>> allData;
+		try {
+			allData = mapper.readValue(file, new TypeReference<Map<String, Map<String, Object>>>() {});
+			userData = allData.get(scenario);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		requestData = (Map<String, Object>) userData.get("request");
+		expectedData = (Map<String, Object>) userData.get("expected");
+		context.setExpectedData(expectedData);
+		context.setExpectedData(expectedData);
+		request = given()
+				.contentType("application/json")
+				.body(requestData);
+	}
+
 }

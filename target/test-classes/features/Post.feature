@@ -63,3 +63,12 @@ Scenario Outline: Verify user gets error with correct error message when creatin
     |invalidLenContact|
     |invalidEmail|
     |duplicateEmail|
+    
+  Scenario Outline: Verify user reveives 401 Unauthorized when sending request without authorization
+    Given User has No Auth and creates request from "<Scenario>" and "User.json"
+    When user send post request with valid first name,last name,contact number,email id,user address
+    Then user should receive correct status code
+    
+    Examples:
+    |Scenario|
+    |NoAuth|
